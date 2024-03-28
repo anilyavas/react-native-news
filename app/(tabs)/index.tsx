@@ -1,18 +1,17 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, FlatList } from 'react-native';
+import { View } from '@/components/Themed';
+import dummyNews from '@/assets/data/dummyNews.json';
+import NewsListItem from '@/components/NewsListItem';
 
-import EditScreenInfo from '@/components/EditScreenInfo';
-import { Text, View } from '@/components/Themed';
+const news = dummyNews.articles;
 
-export default function TabOneScreen() {
+export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <View
-        style={styles.separator}
-        lightColor='#eee'
-        darkColor='rgba(255,255,255,0.1)'
+      <FlatList
+        data={news}
+        renderItem={({ item }) => <NewsListItem news={item} />}
       />
-      <EditScreenInfo path='app/(tabs)/index.tsx' />
     </View>
   );
 }
@@ -22,14 +21,5 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
   },
 });
