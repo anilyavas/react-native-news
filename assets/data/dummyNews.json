@@ -4,7 +4,7 @@
     "articles": [
     {
     "source": {
-    "id": "wired",
+    "id": 1,
     "name": "Wired"
     },
     "author": "Joel Khalili",
@@ -17,7 +17,7 @@
     },
     {
     "source": {
-    "id": "wired",
+    "id": 2,
     "name": "Wired"
     },
     "author": "Joel Khalili",
@@ -30,7 +30,7 @@
     },
     {
     "source": {
-    "id": "bbc-news",
+    "id": 3,
     "name": "BBC News"
     },
     "author": "https://www.facebook.com/bbcnews",
@@ -43,7 +43,7 @@
     },
     {
     "source": {
-    "id": "ars-technica",
+    "id": 4,
     "name": "Ars Technica"
     },
     "author": "Ashley Belanger",
@@ -56,7 +56,7 @@
     },
     {
     "source": {
-    "id": "ars-technica",
+    "id": 5,
     "name": "Ars Technica"
     },
     "author": "Ashley Belanger",
@@ -69,7 +69,7 @@
     },
     {
     "source": {
-    "id": null,
+    "id": 6,
     "name": "Gizmodo.com"
     },
     "author": "Matt Novak",
@@ -82,7 +82,7 @@
     },
     {
     "source": {
-    "id": null,
+    "id": 7,
     "name": "NPR"
     },
     "author": "David Gura",
@@ -95,7 +95,7 @@
     },
     {
     "source": {
-    "id": null,
+    "id": 8,
     "name": "ReadWrite"
     },
     "author": "Ali Rees",
@@ -108,7 +108,7 @@
     },
     {
     "source": {
-    "id": null,
+    "id": 9,
     "name": "ReadWrite"
     },
     "author": "Radek Zielinski",
@@ -121,7 +121,7 @@
     },
     {
     "source": {
-    "id": "business-insider",
+    "id": 10,
     "name": "Business Insider"
     },
     "author": "prosen@insider.com (Phil Rosen)",
@@ -134,7 +134,7 @@
     },
     {
     "source": {
-    "id": "business-insider",
+    "id": 11,
     "name": "Business Insider"
     },
     "author": "prosen@insider.com (Phil Rosen)",
@@ -147,7 +147,7 @@
     },
     {
     "source": {
-    "id": "business-insider",
+    "id": 12,
     "name": "Business Insider"
     },
     "author": "Lloyd Lee",
@@ -160,7 +160,7 @@
     },
     {
     "source": {
-    "id": "business-insider",
+    "id": 13,
     "name": "Business Insider"
     },
     "author": "Sarah Andersen,Teresa Zhang,Laila Maidan",
@@ -173,7 +173,7 @@
     },
     {
     "source": {
-    "id": "business-insider",
+    "id": 14,
     "name": "Business Insider"
     },
     "author": "Emily Stewart",
@@ -186,7 +186,7 @@
     },
     {
     "source": {
-    "id": null,
+    "id": 15,
     "name": "ReadWrite"
     },
     "author": "Radek Zielinski",
@@ -199,7 +199,7 @@
     },
     {
     "source": {
-    "id": null,
+    "id": 16,
     "name": "ReadWrite"
     },
     "author": "Radek Zielinski",
@@ -212,7 +212,7 @@
     },
     {
     "source": {
-    "id": null,
+    "id": 17,
     "name": "ReadWrite"
     },
     "author": "Radek Zielinski",
@@ -225,7 +225,7 @@
     },
     {
     "source": {
-    "id": null,
+    "id": 18,
     "name": "ReadWrite"
     },
     "author": "Radek Zielinski",

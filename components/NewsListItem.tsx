@@ -1,13 +1,16 @@
 import { News } from '@/constants/Types';
-import { StyleSheet, Image } from 'react-native';
-import { Text, View } from './Themed';
+import { StyleSheet, Image, Pressable } from 'react-native';
+import { Text } from './Themed';
+import { Link } from 'expo-router';
 
 const NewsListItem = ({ news }: { news: News }) => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>{news.title}</Text>
-      <Image source={{ uri: news.urlToImage }} style={styles.image} />
-    </View>
+    <Link href={`/(tabs)/${news.id}`} asChild>
+      <Pressable style={styles.container}>
+        <Text style={styles.title}>{news.title}</Text>
+        <Image source={{ uri: news.urlToImage }} style={styles.image} />
+      </Pressable>
+    </Link>
   );
 };
 
@@ -22,10 +25,11 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: 'bold',
-    paddingVertical: 5,
+    paddingVertical: 10,
   },
   image: {
     width: '100%',
     aspectRatio: 1,
+    marginVertical: 10,
   },
 });
