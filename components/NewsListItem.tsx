@@ -1,20 +1,12 @@
 import { News } from '@/constants/Types';
-import { StyleSheet, Image, Pressable } from 'react-native';
+import { StyleSheet, Image } from 'react-native';
 import { Text, View } from './Themed';
-import { Entypo } from '@expo/vector-icons';
 
 const NewsListItem = ({ news }: { news: News }) => {
   return (
     <View style={styles.container}>
-      <Image
-        source={{ uri: news.urlToImage }}
-        style={styles.image}
-        resizeMode='cover'
-      />
       <Text style={styles.title}>{news.title}</Text>
-      <Pressable>
-        <Entypo name='chevron-right' color='white' size={20} />
-      </Pressable>
+      <Image source={{ uri: news.urlToImage }} style={styles.image} />
     </View>
   );
 };
@@ -23,18 +15,17 @@ export default NewsListItem;
 const styles = StyleSheet.create({
   container: {
     padding: 15,
-    flexDirection: 'row',
     borderBottomColor: 'grey',
     borderBottomWidth: 1,
     margin: 10,
   },
   title: {
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: 'bold',
+    paddingVertical: 5,
   },
   image: {
-    width: 75,
+    width: '100%',
     aspectRatio: 1,
-    margin: 5,
   },
 });
